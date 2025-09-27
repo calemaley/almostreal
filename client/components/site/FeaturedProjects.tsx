@@ -10,28 +10,28 @@ import { useState } from "react";
 
 const projects = [
   {
-    id: "hydro-alpha",
-    title: "Hydropower Plant – Alpha Dam",
-    img: "https://images.pexels.com/photos/460672/pexels-photo-460672.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    tags: ["Hydropower", "Installation"],
+    id: "switchyard-walkway",
+    title: "Switchyard Walkway & Bays",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F3bf22d05ba0448ba84dcc33dbdacf26e%2F33aea13ea9494ee69c6c338a8d498329?format=webp&width=1200",
+    tags: ["Medium-Voltage", "Construction"],
   },
   {
-    id: "mv-substation",
-    title: "132kV Substation Upgrade",
-    img: "https://images.pexels.com/photos/417192/pexels-photo-417192.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    tags: ["Medium-Voltage", "Testing"],
+    id: "control-panel-assembly",
+    title: "Control Panel Assembly",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F3bf22d05ba0448ba84dcc33dbdacf26e%2Fd28622a6527a4177b39f9bd581ebf55b?format=webp&width=1200",
+    tags: ["Commissioning", "Wiring"],
   },
   {
-    id: "sollatek-hq",
-    title: "Hospital Equipment Protection – Sollatek",
-    img: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1200",
-    tags: ["Sollatek", "Protection"],
+    id: "field-cable-jointing",
+    title: "Field Cable Jointing",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F3bf22d05ba0448ba84dcc33dbdacf26e%2Fa83e596cd398406589662ab8548e3500?format=webp&width=1200",
+    tags: ["MV Cables", "Execution"],
   },
   {
-    id: "grid-integration",
-    title: "Industrial Grid Integration",
-    img: "https://images.pexels.com/photos/34085/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200",
-    tags: ["Large Power", "Integration"],
+    id: "transformer-yard-equipment",
+    title: "Transformer Yard Equipment",
+    img: "https://cdn.builder.io/api/v1/image/assets%2F3bf22d05ba0448ba84dcc33dbdacf26e%2F41cf144db0c04ec085ea6ce20c2565d7?format=webp&width=1200",
+    tags: ["Switchyard", "Assets"],
   },
 ];
 
@@ -40,9 +40,9 @@ export default function FeaturedProjects() {
 
   return (
     <section className="section">
-      <div className="flex items-end justify-between gap-6 mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 sm:gap-6 mb-8">
         <h2 className="section-title">Featured Projects</h2>
-        <a href="/projects" className="hidden md:inline-block btn-secondary">
+        <a href="/projects" className="inline-block btn-secondary mt-3 sm:mt-0">
           View All Projects
         </a>
       </div>
@@ -91,8 +91,8 @@ export default function FeaturedProjects() {
                     className="mt-2 mb-4 w-full rounded-lg object-cover"
                   />
                   <p className="text-foreground/70">
-                    Detailed case study content can include scope, timeline, kVA
-                    ratings, compliance, safety notes, and outcomes.
+                    Highlights from our field execution, installation quality,
+                    and safety-first delivery.
                   </p>
                 </div>
               )}
